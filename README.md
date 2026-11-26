@@ -1,4 +1,4 @@
-# FINITE — Alpha 0.6
+# FINITE — Alpha 0.7
 
 A browser-first single-player economic and life simulation game with a permanently fixed worldwide money supply of **$1 billion in fictional currency**.
 
@@ -20,11 +20,21 @@ Open `index.html` in your browser, or play through [GitHub Pages](https://cormac
 
 - Wallet, savings, company cash, NPC households, government, business sector, reserves and foreign-currency backing accounts preserve exactly $1 billion total.
 - Four fictional countries and 80 inspectable map locations; four purchasable properties.
-- Developer, designer and entrepreneur contract challenges, daily advancement, income taxes.
+- Developer contracts with real multi-file web projects, designer and entrepreneur contract challenges, daily advancement and income taxes.
 - Fictional share purchases and sales, price history, net worth, and a leaderboard with ten simulated households.
 - Loans and interest, repayment, bankruptcy, property insurance, four exchangeable currencies (fixed rates), and simulated expansion/recession with changing wages and retail prices.
 - Player companies: capital, manufacturing, pricing, simulated customer demand, sales and advertising. NPC stock prices and economic cycles use simple simulation rules, not actual market data.
 - Local save migration from earlier versions.
+
+## Developer career (0.7)
+
+- Four rotating offers per in-game day, drawn from six client projects: company website, budget dashboard, product catalog, retail repair, warehouse repair and booking repair.
+- New websites start with empty HTML, CSS and JavaScript files; repair projects contain 743–745 lines of substantive existing code and three deliberate defects each.
+- Developer workspace: detailed briefs, separate source files, line numbers, in-file search, autosaved drafts, previews, active projects and completed-project history.
+- Acceptance checks verify HTML structure, CSS requirements, multiple JavaScript inputs/outputs in a dedicated Web Worker, and selected interactions in an isolated browser frame. Worker runs have a three-second timeout. These checks are not a complete design or code-quality review.
+- Only passing submissions pay out. Payment and taxes use the conserved virtual currency ledger. Accepted projects survive day advancement and reloading. Time estimates are guidance, not forced timers.
+- Source files: `developer-projects.js`, `finite-developer.js`, and `finite-developer.css`.
+- Browser tests are local simulations; they are not a secure anti-cheat service, and external resources are restricted in the previews.
 
 ## Limits
 
