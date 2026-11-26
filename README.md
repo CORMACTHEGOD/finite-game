@@ -8,8 +8,12 @@ The game is currently a standalone `index.html` file. Open it in a browser, or p
 
 **To enable GitHub Pages:** Repository → Settings → Pages → Deploy from a branch → `main` → `/ (root)` → Save. GitHub may take a little time to publish.
 
-### Included in alpha v0.1
+### Included in alpha v0.2
 
+- Virtual desktop with a taskbar, app windows and fullscreen mode
+- Finance, Careers, World Map, Browser, World News and Settings apps
+- Four fictional city maps with 80 inspectable locations, building filters and directory pages
+- Searchable fictional intranet with tabs, history and links between the map and browser
 - Fullscreen dark-mode financial dashboard
 - Character name, four fictional starting countries and three career paths
 - Code-editing, design-choice and business-math contract challenges
@@ -22,7 +26,7 @@ Every transfer debits one account and credits another. Player money, company mon
 
 ### Future plans
 
-Player companies, investing, expanded careers, government, laws, a world map, multiplayer with server-verified money and a potential Steam release.
+Player companies, investing, expanded careers, government, laws, building ownership, construction, deeper city simulations, multiplayer with server-verified money and a potential Steam release.
 
 There are **no real-money transactions, deposits, cashouts or investment products**.
 
