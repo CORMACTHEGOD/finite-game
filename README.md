@@ -1,4 +1,4 @@
-# FINITE — Alpha 0.9
+# FINITE — Alpha 0.10
 
 A browser-first single-player economic and life simulation game with a permanently fixed worldwide money supply of **$1 billion in fictional currency**.
 
@@ -51,6 +51,14 @@ Open `index.html` in your browser, or play through [GitHub Pages](https://cormac
 - NPC attempts are simulated on game-day advancement. Successful NPC contractors receive the remaining budget; failed NPC attempts receive nothing. Once all available contractors have failed or declined, the source is removed from the queue and the review history is retained.
 - Ten NPC identities participate in the single-player simulation. New offers rotate daily among existing project templates. Older self-reclaimed drafts are reassigned during migration.
 - Multiplayer handoffs and actual AI-written NPC repairs remain future work.
+
+## Shared Code Studio and current-source reviews (0.10)
+
+- Standalone Code Studio now uses the same single-editor, multi-file tab interface as client contracts. New personal projects start with one empty file, and older projects migrate to the new format.
+- Language output integrations: HTML/CSS previews, JavaScript console and website execution, TypeScript transpilation, Python (Pyodide), Lua (Wasmoon), SQL (sql.js), JSON/YAML/XML parsing and text/Markdown output. Optional runtime libraries load from version-pinned CDN URLs. Other languages are editing-only until compiler infrastructure is provided.
+- Runtime execution is separated from the game in an opaque-origin sandbox and a time-limited worker. Runtime integrations need real-browser verification; TypeScript transpilation is not full type checking.
+- Editing source invalidates prior output. Client reviews capture a fresh source snapshot and run fresh structure, integrity, function and interaction checks. Missing/empty essential source or failed integrity prevents payment even if earlier results passed. Changing source during a review invalidates that review.
+- Automated reviews are rule-based and do not prove that every possible code path or every aspect of design is correct.
 
 ## Limits
 
