@@ -1,4 +1,4 @@
-# FINITE — Alpha 0.7
+# FINITE — Alpha 0.8
 
 A browser-first single-player economic and life simulation game with a permanently fixed worldwide money supply of **$1 billion in fictional currency**.
 
@@ -29,12 +29,20 @@ Open `index.html` in your browser, or play through [GitHub Pages](https://cormac
 ## Developer career (0.7)
 
 - Four rotating offers per in-game day, drawn from six client projects: company website, budget dashboard, product catalog, retail repair, warehouse repair and booking repair.
-- New websites start with empty HTML, CSS and JavaScript files; repair projects contain 743–745 lines of substantive existing code and three deliberate defects each.
+- New website assignments start with one empty file; add, rename, delete or change languages through the tabbed editor. Existing repair projects retain 743–745 lines of source and three deliberate defects each.
 - Developer workspace: detailed briefs, separate source files, line numbers, in-file search, autosaved drafts, previews, active projects and completed-project history.
 - Acceptance checks verify HTML structure, CSS requirements, multiple JavaScript inputs/outputs in a dedicated Web Worker, and selected interactions in an isolated browser frame. Worker runs have a three-second timeout. These checks are not a complete design or code-quality review.
-- Only passing submissions pay out. Payment and taxes use the conserved virtual currency ledger. Accepted projects survive day advancement and reloading. Time estimates are guidance, not forced timers.
+- Submissions can be incomplete. A deterministic simulated client reviewer weighs structural checks (35%), JavaScript function results (40%), and live interaction tests (25%). Fully passing work can earn full pay, useful incomplete work can earn reduced pay, and poor or unchanged work is rejected. Payments and taxes preserve the currency ledger.
 - Source files: `developer-projects.js`, `finite-developer.js`, and `finite-developer.css`.
 - Browser tests are local simulations; they are not a secure anti-cheat service, and external resources are restricted in the previews.
+
+## Developer Studio and reviews (0.8)
+
+- One empty file for new projects, up to 30 individually selectable file tabs, and 27 language modes. HTML/CSS/JavaScript run in browser previews and tests; other languages are editable but do not have compilers or interpreters in this release.
+- Partial submissions produce a saved client report with score, pay, failed requirements, and reassignment status. Remaining contract budgets and exact source snapshots carry into inherited repair jobs. Unchanged work earns nothing.
+- Eligible inherited jobs are claimable locally; other jobs or expired offers transfer the remaining budget to a simulated NPC. NPC completion is an economic simulation, not an AI-generated corrected code artifact.
+- The reviewer is deterministic, not an external LLM. Multiplayer routing, external AI evaluation, and native execution of other languages require future infrastructure.
+- Existing drafts migrate to language-aware files. The additional source file is `developer-review.js`.
 
 ## Limits
 
