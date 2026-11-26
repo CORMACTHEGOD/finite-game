@@ -1,4 +1,4 @@
-# FINITE — Alpha 0.5
+# FINITE — Alpha 0.6
 
 A browser-first single-player economic and life simulation game with a permanently fixed worldwide money supply of **$1 billion in fictional currency**.
 
@@ -8,7 +8,8 @@ Open `index.html` in your browser, or play through [GitHub Pages](https://cormac
 
 ## Desktop and internet
 
-- Virtual desktop, taskbar, minimize/maximize/close, fullscreen, five wallpapers and two-window split mode (focus one window at a time).
+- Windows-inspired colorful virtual desktop, taskbar, searchable Start menu, custom SVG icons, fullscreen, seven wallpapers, light/dark themes, four accent colors and two-window split mode (focus one window at a time).
+- Redesigned onboarding, finance sidebar, browser shortcuts, maps, cards, forms and responsive layouts. Visual preferences persist with your save. The UI lives in `finite-ui.css` and `finite-ui.js`, with the existing simulation in `index.html`.
 - File manager, Code Studio, and installable local Notes, Calculator and Portfolio apps.
 - HTML/CSS/JavaScript local sandbox preview; publish HTML/CSS pages within your own game save. Scripts and input controls are excluded from published pages. The code editor supports a limited HTML element set.
 - Fictional search, browser tabs/history, real-web search and links opening in the normal browser.
