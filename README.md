@@ -8,7 +8,7 @@ The game is currently a standalone `index.html` file. Open it in a browser, or p
 
 **To enable GitHub Pages:** Repository → Settings → Pages → Deploy from a branch → `main` → `/ (root)` → Save. GitHub may take a little time to publish.
 
-### Included in alpha v0.3
+### Included in alpha v0.4
 
 - Virtual desktop with a taskbar, app windows and fullscreen mode
 - Finance, Careers, World Map, Browser, World News and Settings apps
@@ -26,6 +26,11 @@ The game is currently a standalone `index.html` file. Open it in a browser, or p
 - Company directory and read-only markets preview
 
 Every transfer debits one account and credits another. Player money, company money, treasury money and reserves add up to exactly $1 billion. This is an educational prototype, **not** a secure multiplayer ledger.
+
+- Finite Web and Real Web search modes; real websites open in the normal browser
+- Finite Mail transaction inbox, Finite Bank savings transfers, Finite Estate property purchases and Finite Studio text-only local website publishing
+- Property ownership and website registration use the same conserved fictional money supply
+- Existing saves migrate automatically; websites are local to the single-player save, not public internet pages
 
 ### Future plans
 
