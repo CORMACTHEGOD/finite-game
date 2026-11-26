@@ -8,12 +8,15 @@ The game is currently a standalone `index.html` file. Open it in a browser, or p
 
 **To enable GitHub Pages:** Repository → Settings → Pages → Deploy from a branch → `main` → `/ (root)` → Save. GitHub may take a little time to publish.
 
-### Included in alpha v0.2
+### Included in alpha v0.3
 
 - Virtual desktop with a taskbar, app windows and fullscreen mode
 - Finance, Careers, World Map, Browser, World News and Settings apps
 - Four fictional city maps with 80 inspectable locations, building filters and directory pages
 - Searchable fictional intranet with tabs, history and links between the map and browser
+- Real website addresses and real-web search open in a separate normal browser tab
+- Finite Market: 12 fictional items, virtual checkout, saved inventory and purchase ledger; purchases transfer game currency to NPC businesses
+- No real checkout or delivery; virtual items do not yet provide career bonuses or resale value
 - Fullscreen dark-mode financial dashboard
 - Character name, four fictional starting countries and three career paths
 - Code-editing, design-choice and business-math contract challenges
