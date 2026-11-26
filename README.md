@@ -1,4 +1,4 @@
-# FINITE — Alpha 0.8
+# FINITE — Alpha 0.9
 
 A browser-first single-player economic and life simulation game with a permanently fixed worldwide money supply of **$1 billion in fictional currency**.
 
@@ -40,9 +40,17 @@ Open `index.html` in your browser, or play through [GitHub Pages](https://cormac
 
 - One empty file for new projects, up to 30 individually selectable file tabs, and 27 language modes. HTML/CSS/JavaScript run in browser previews and tests; other languages are editable but do not have compilers or interpreters in this release.
 - Partial submissions produce a saved client report with score, pay, failed requirements, and reassignment status. Remaining contract budgets and exact source snapshots carry into inherited repair jobs. Unchanged work earns nothing.
-- Eligible inherited jobs are claimable locally; other jobs or expired offers transfer the remaining budget to a simulated NPC. NPC completion is an economic simulation, not an AI-generated corrected code artifact.
+- Only NPC-originated work never previously attempted by the player can be claimed locally. Failed player submissions go directly to a different eligible NPC. NPC completion is an economic simulation, not an AI-generated corrected code artifact.
 - The reviewer is deterministic, not an external LLM. Multiplayer routing, external AI evaluation, and native execution of other languages require future infrastructure.
 - Existing drafts migrate to language-aware files. The additional source file is `developer-review.js`.
+
+## Unique contractor routing (0.9)
+
+- Every project has a persistent root ID, original contractor identity, attempted-contractor set and review history. The author and all previously attempted contractors are excluded from further assignments.
+- Failed or abandoned player work is hidden from the player's repair board and routed to an eligible NPC. NPC-authored inherited jobs are offered to the player for two game days before routing to other NPCs.
+- NPC attempts are simulated on game-day advancement. Successful NPC contractors receive the remaining budget; failed NPC attempts receive nothing. Once all available contractors have failed or declined, the source is removed from the queue and the review history is retained.
+- Ten NPC identities participate in the single-player simulation. New offers rotate daily among existing project templates. Older self-reclaimed drafts are reassigned during migration.
+- Multiplayer handoffs and actual AI-written NPC repairs remain future work.
 
 ## Limits
 
