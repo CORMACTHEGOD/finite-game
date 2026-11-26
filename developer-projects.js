@@ -78,3 +78,17 @@ if(booking){
 }
 return {'index.html':outHtml,'styles.css':css,'app.js':outJs};
 }
+
+/* Explicit UI acceptance criteria in addition to function requirements. */
+devCatalog.landing.behavior.push('Use a select with ID plan-selector and options with values basic, pro and team. Changing it must display the corresponding monthly price in price-output.');
+devCatalog.expense.behavior.push('Use numeric inputs income and expense. On input or change, balance-output must show the calculated balance without requiring a page reload.');
+devCatalog.catalog.behavior.push('Use a select with options all, home and tech. Give each product article a data-category of home or tech (at least two of each). Changing the selector must show only the matching cards; all restores the catalog.');
+devCatalog.landing.selectors.push(['select#plan-selector',1],['#plan-selector option[value="basic"]',1],['#plan-selector option[value="pro"]',1],['#plan-selector option[value="team"]',1]);
+devCatalog.expense.selectors.push(['input#income',1],['input#expense',1]);
+devCatalog.catalog.selectors.push(['select#category-filter',1],['#category-filter option[value="all"]',1],['#category-filter option[value="home"]',1],['#category-filter option[value="tech"]',1],['#products article[data-category="home"]',2],['#products article[data-category="tech"]',2]);
+devCatalog.landing.cases.push(['Annual basic','annualPrice',['basic'],120],['Unknown annual plan','annualPrice',['other'],0]);
+devCatalog.expense.cases.push(['Second balance','calculateBalance',[875,238],637],['Savings on full spend','savingsRate',[500,500],0],['Mixed expense list','totalExpenses',[[0,16.5,23.25,100]],139.75]);
+devCatalog.catalog.cases.push(['Category absent','filterProducts',[[{category:'home'},{category:'home'}],'tech'],[]],['Cart with decimal prices','cartTotal',[[{price:2.5,quantity:4},{price:7.25,quantity:2}]],24.5],['Whole dollar price','formatPrice',[8],'$8.00']);
+devCatalog.checkout.cases.push(['Another cart','cartTotal',[[{price:15,quantity:4},{price:12,quantity:3}]],96],['Second coupon total','applyDiscount',[240,'SAVE20'],192]);
+devCatalog.inventory.cases.push(['Stock boundary','stockLabel',[1],'low'],['Inventory value with zero stock','inventoryValue',[[{price:100,quantity:0},{price:6,quantity:7}]],42],['Mixed case search','searchInventory',[[{name:'Blue Chair'},{name:'Blue Lamp'}],'ChAiR'],[{name:'Blue Chair'}]]);
+devCatalog.booking.cases.push(['Long stay','stayLength',[3,14],11],['Another quote','bookingCost',[125,2],265],['One room left','isAvailable',[1,1],true]);
